@@ -1,0 +1,98 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file to index.html --> 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- import google fonts --> 
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+  <!-- importing font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- linking bootstrap to index.html-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- making sure that nav-bar collapse works --> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- import jQuery --> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+  <!-- linking js file to index.html --> 
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+<!-- single page application --> 
+<body>
+  
+<div class="container-fluid">
+  <h1><strong> Local Weather App </strong></h1> 
+  <button id="getWeather" class="btn btn-primary" style="margin-bottom:40px; margin-top:40px;"><h2> Check Weather </h2></button>
+  <div class="weather">
+    <h2><span id="location"></span></h2>
+    <h2><span id="description"></span>
+    <!-- icon appear next to weather description (inline element) -->   
+    <span>
+      <div class="icon sun-shower hide ">
+        <div class="cloud"></div>
+        <div class="sun">
+          <div class="rays"></div>
+        </div>
+        <div class="rain"></div>
+      </div>
+      
+      <div class="icon thunder-storm hide thunderstorm">
+        <div class="cloud"></div>
+        <div class="lightning">
+          <div class="bolt"></div>
+          <div class="bolt"></div>
+        </div>
+      </div>
+      
+      <div class="icon cloudy hide clouds">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+      </div>
+      
+      <div class="icon flurries hide snow">
+        <div class="cloud"></div>
+        <div class="snow">
+          <div class="flake"></div>
+          <div class="flake"></div>
+        </div>
+      </div>
+      
+      <div class="icon sunny hide clear">
+        <div class="sun">
+          <div class="rays"></div>
+        </div>
+      </div>
+      
+      <div class="icon rainy hide rain">
+        <div class="cloud"></div>
+        <div class="rain"></div>
+      </div>
+    </span></h2>
+    <h2><span id="temp"></span><span id="tempUnit" ></span></h2>
+  </div>
+  <br>  
+  <input type="image" src="https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/Celsius-Red.png?raw=true" alt="celsius-RED" id="celsius">
+  <h2 class="textBetweenImg"> OR </h2>
+  <input type="image" src="https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/Fahrenheit-Red.png?raw=true" alt="fahrenheit-RED">
+  <!-- displays error message if unable to retrieve geolocation data --> 
+  <h4><span id="error"></span><h4>
+  <br><br><br><br><br><br><br>
+  <h4> Location services must be turned on. Go to Settings -> Privacy -> Location Services </h4> 
+  <div class="credits">
+    <h3>Icon animation credits to <a href="https://codepen.io/joshbader/full/EjXgqr/" target="_blank">joshbader</a></h3>
+  </div>
+</div> 
+
+<!-- The footer -->
+<footer>
+  <p>Copyright © Chris Jim 2017. All Rights Reserved</p>
+  <p>
+    <a href="mailto:chrisjim316@gmail.com"><i class="fa fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/chris-jim-77b090128/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/chrisjim316" target="_blank"><i class="fa fa-github"></i></a>
+    <a href="https://www.quora.com/profile/Chris-Jim-1" target="_blank"><i class="fa fa-quora"></i></a>
+    <a href="https://www.freecodecamp.com/chrisjim316" target="_blank"><i class="fa fa-free-code-camp"></i></a>
+  </p>
+</footer>
+    
+</body>
