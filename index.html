@@ -1,0 +1,97 @@
+<head>
+  <!-- import google fonts --> 
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+  <!-- importing font awesome icons --> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- import jQuery --> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+</head>
+
+<div class="cloud-intro"> 
+<!-- single page application --> 
+<body> 
+<div class="container-fluid">
+  <h1><strong> Local Weather App </strong></h1> 
+  <button id="getWeather" class="btn btn-primary" style="margin-bottom:40px; margin-top:40px;"><h2> Check Weather </h2></button> 
+  <div class="weather"> 
+    <div class="locationContainer hide">
+      <h2><span id="location"></span></h2>
+    </div>
+    <h2><span id="description"></span>
+    <!-- icon appear next to weather description (inline element) -->   
+    <span>
+      <div class="icon sun-shower hide ">
+        <div class="cloud"></div>
+        <div class="sun">
+          <div class="rays"></div>
+        </div>
+        <div class="rain"></div>
+      </div>
+      
+      <div class="icon thunder-storm hide thunderstorm">
+        <div class="cloud"></div>
+        <div class="lightning">
+          <div class="bolt"></div>
+          <div class="bolt"></div>
+        </div>
+      </div>
+      
+      <div class="icon cloudy hide clouds">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+      </div>
+      
+      <div class="icon flurries hide snow">
+        <div class="cloud"></div>
+        <div class="snow">
+          <div class="flake"></div>
+          <div class="flake"></div>
+        </div>
+      </div>
+      
+      <div class="icon sunny hide clear">
+        <div class="sun">
+          <div class="rays"></div>
+        </div>
+      </div>
+      
+      <div class="icon rainy hide rain">
+        <div class="cloud"></div>
+        <div class="rain"></div>
+      </div>
+    </span></h2>
+    <h2><span id="temp"></span><span id="tempUnit" ></span></h2>
+  </div>
+  <br>  
+  <input type="image" src="https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/Celsius-Red.png?raw=true" alt="celsius-RED" id="toCelsius">
+  <h2 class="textBetweenImg"> OR </h2>
+  <input type="image" src="https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/Fahrenheit-Red.png?raw=true" alt="fahrenheit-RED" id="toFahrenheit"> 
+  <!-- displays error message if unable to retrieve geolocation data --> 
+  <h4><span id="error"></span><h4>
+  <br><br><br><br><br><br><br>
+  <h4> Location services must be turned on. Go to Settings -> Privacy -> Location Services </h4> 
+  <h4> If it still doesn't work, check out this <a href="https://user-images.githubusercontent.com/30268174/28568721-651b3360-7169-11e7-80df-a419fd5c7f53.gif" target="_blank">DEMO</a></h4>
+  <br>
+  <div class="credits">
+    <h3>Icon animation credits to <a href="https://codepen.io/joshbader/full/EjXgqr/" target="_blank">joshbader</a></h3>
+  </div>
+</div>
+<!-- closing tag for cloud animations --> 
+</div>
+
+<!-- The footer -->
+<footer>
+  <p>Copyright © Joshua Gornall 2020. All Rights Reserved</p>
+  <p>
+    <a href="mailto:joshuagornall@gmail.com"><i class="fa fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/joshuagornall" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/joshuagornall" target="_blank"><i class="fa fa-github"></i></a>
+    <a
+href="https://www.quora.com/profile/Joshua-Gornall-1" target="_blank"><i class="fa fa-quora"></i></a>
+    <a href="https://www.freecodecamp.org/joshuagornall" target="_blank"><i class="fa fa-free-code-camp"></i></a>
+  </p>
+</footer>
+    
+</body>
+  
