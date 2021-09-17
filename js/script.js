@@ -85,30 +85,30 @@ function getBackground(condition) {
   switch (condition) {
       
     case "clear": 
-      $("body").css("background-image", "url(https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/backgroundChanging/clear.jpg)");
+      $("body").css("background-image", "url(https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/backgroundChanging/clear.jpg?raw=true)");
       break;
       
     case "clouds":
-      $("body").css("background-image", "url(https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/backgroundChanging/clouds.jpg)");
+      $("body").css("background-image", "url(https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/backgroundChanging/clouds.jpg?raw=true)");
       $("body").css("color", "black");
       /* $("div.addCloud").addClass("cloud-intro"); */
       break;
       
     case "drizzle":
-      $("body").css("background-image", "url(https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/backgroundChanging/drizzle.jpg)");
+      $("body").css("background-image", "url(https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/backgroundChanging/drizzle.jpg?raw=true)");
       break;
       
     case "rain":
-      $("body").css("background-image", "url(https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/backgroundChanging/rain.jpg)");;
+      $("body").css("background-image", "url(https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/backgroundChanging/rain.jpg?raw=true)");;
       break;
       
     case "snow":
-      $("body").css("background-image", "url(https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/backgroundChanging/snow.jpg)");
+      $("body").css("background-image", "url(https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/backgroundChanging/snow.jpg?raw=true)");
       $("body").css("color", "black");
       break;
       
     case "thunderstorm":
-      $("body").css("background-image", "url(https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/backgroundChanging/thunderstorm.jpg)");
+      $("body").css("background-image", "url(https://github.com/joshuagornall/LocalWeatherApp/blob/main/Images/backgroundChanging/thunderstorm.jpg?raw=true)");
       break;
   }
 }
